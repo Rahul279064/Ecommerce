@@ -15,3 +15,15 @@ exports.createorder=(req,res,next)=>{
         }
     )
 }
+
+
+
+// clone
+// exports.createorder=(req,res,next)=>{
+//     res.json(
+//         {
+//             success:true, 
+//             message:" order work!"
+//         }
+//     )
+// }
