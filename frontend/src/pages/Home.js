@@ -76,7 +76,7 @@ export default function Home(){
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
                 <span id="no_of_reviews">(5 Reviews)</span>
-              </div>
+              </div>    
               <p class="card-text">$150.32</p>
               <a href="#" id="view_btn" class="btn btn-block">View Details</a>
             </div>
