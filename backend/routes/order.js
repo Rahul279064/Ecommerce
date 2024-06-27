@@ -5,4 +5,4 @@ const { createorder } = require('../controller/ordercontroller');
 router.route('/order').post(createorder);
 
 
-module.exports=router;
+module.exports=router;  

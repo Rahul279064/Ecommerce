@@ -16,7 +16,7 @@ connectDatabase();
 
 
 // middleware open
-app.use(express.json())
+app.use(express.json()) 
 // middleware close
 app.use('/api/v1/',products);
 app.use('/api/v1/',orders);
