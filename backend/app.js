@@ -2,6 +2,7 @@ const express = require ('express');
 const app =express();
 const dotenv=require('dotenv');
 const path = require('path');
+const cors =require('cros');
 const connectDatabase = require('./config/connectDatabase');
 
 
@@ -16,7 +17,8 @@ connectDatabase();
 
 
 // middleware open
-app.use(express.json()) 
+app.use(express.json()) ;
+app.use(cors());
 // middleware close
 app.use('/api/v1/',products);
 app.use('/api/v1/',orders);

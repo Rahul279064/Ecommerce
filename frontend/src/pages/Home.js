@@ -3,10 +3,10 @@ import ProductCard from '../components/ProductCard'
 
 export default function Home(){
 
-     const [products,setProducts] =useState([]);
+     const [Products,setProducts] =useState([]);
        
       useEffect(()=>{
-          fetch(process.env.REACT_API_URL+'/product')
+          fetch(process.env.REACT_APP_API_URL+'/products ')
           .then(res=>res.json())
           .then(res=>setProducts(res))
       },[])
