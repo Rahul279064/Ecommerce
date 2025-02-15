@@ -1,34 +1,23 @@
-export default function Header(){
-    return <nav class="navbar row">
-      <div class="col-12 col-md-3">
-        <div className="navbar-brand"> 
-         <div className='rahul'><img width="80px" src="/images/logo.png" /> <span></span>FLIPKART  </div> 
-        </div>
-      </div>
+import { Link } from "react-router-dom";
+import Search from "./Search";
 
-      <div class="col-12 col-md-6 mt-2 mt-md-0">
-        <div class="input-group">
-          <input
-            type="text"
-            id="search_field"
-            class="form-control"
-            placeholder="Enter Product Name ..."
-          />
-          <div class="input-group-append">
-            <button id="search_btn" class="btn">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+export default function Header({cartItems}) {
+    return <nav className="navbar row">
+            <div className="col-12 col-md-3">
+                <div className="navbar-brand">
+                  <h4>RAHUL CART</h4>
+                </div>
+            </div>
 
-      <div class="col-12 col-md-3 mt-4 mt-md-0 text-center">
-        <span id="cart" class="ml-3">Cart</span>
-        <span class="ml-1" id="cart_count">2</span>
-      </div>
-</nav>
+            <div className="col-12 col-md-6 mt-2 mt-md-0">
+              <Search/>
+            </div>
 
-
-
-    
+            <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
+                <Link to={"/cart"}>
+                    <span id="cart" className="ml-3">Cart</span>
+                    <span className="ml-1" id="cart_count">{cartItems.length}</span>
+                </Link>
+            </div>
+        </nav>
 }
