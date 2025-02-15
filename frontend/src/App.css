@@ -72,7 +72,8 @@ nav {
 }
 
 #search_btn {
-  background-color: #febd69;
+  background-color: #200ec1;
+  color: white;
 }
 
 .input-group {
@@ -87,7 +88,7 @@ nav {
 
 #login_btn,
 #view_btn {
-  background-color: #febd69;
+  background-color: #200ec1;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
 }
@@ -98,10 +99,10 @@ nav {
 }
 
 #cart_count {
-  background-color: #febd69;
+  background-color:#200ec1;
   padding: 0.2rem 0.5rem;
   border-radius: 0.2rem;
-  color: black;
+  color: #bcbcc0;
   font-weight: bold;
   font-size: 0.9rem;
 }
@@ -116,11 +117,11 @@ nav {
 }
 
 .card-title a {
-  color: #2e2e2e;
+  color: #200ec1;
 }
 
 .card-title a:hover {
-  color: #fa9c23;
+  color: #1214a6;
   text-decoration: none;
 }
 
@@ -133,7 +134,7 @@ nav {
 }
 
 #view_btn {
-  background-color: #fa9c23;
+  background-color: #236efa;
   color: white;
 }
 
